@@ -1,0 +1,18 @@
+  server:
+    port: 9998
+  Spring:
+    application:
+      name: user-service
+    main:
+      allow-bean-definition-overriding: true
+
+    cloud:
+      nacos:
+        discovery:
+          server-addr: 192.168.32.1:9001
+#          server-addr: 198.10.1.58:9001
+        config:
+          server-addr: 192.168.32.1:9001
+#          server-addr: 198.10.1.58:9001
+          file-extension: yaml
+

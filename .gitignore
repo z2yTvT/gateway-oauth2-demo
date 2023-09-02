@@ -1,0 +1,5 @@
+/gateway/target/
+/oauth2/target/
+/zmall.iml
+/.idea/
+/user-service/target/
