@@ -25,6 +25,7 @@ public class UserService implements UserDetailsService {
         if(!StringUtils.hasLength(username)){
             throw new RuntimeException("用户名不能为空");
         }
+        //test
         User user = userRepository.findByUsername(username);
         if(user != null){
             return new org.springframework.security.core.userdetails.User(
